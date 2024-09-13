@@ -53,7 +53,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/marwa-gamal5/oneorder-shop-.git
+   git clone https://github.com/marwa-gamal5/oneorder-shop.git
    cd oneorder-shop
 2. Install dependencies:
    ```bash
@@ -114,7 +114,7 @@ The application is designed with a mobile-first approach, utilizing CSS media qu
 
 You can view the live demo of the application by clicking the link below:
 
-[Live Demo Link](https://oneorder-shop.vercel.app/)
+[Live Demo Link](https://oneorder-shop-owh1.vercel.app/)
 
 ---
 ## 📦 Deployment
