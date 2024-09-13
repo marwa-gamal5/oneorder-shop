@@ -1,0 +1,138 @@
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center; 
+}
+
+.productCard {
+  background-color: white;
+  position: relative;
+  margin: 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px; 
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.priceBadge {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.productImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #f9f9f9;
+}
+
+.productImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  padding: 15px;
+  text-align: left;
+  border: 2px solid black;
+}
+
+.productTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.addBtn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.addBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.loader {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+@media (max-width: 768px) {
+  .productCard {
+    flex: 1 1 200px; 
+  }
+
+  .productImage {
+    height: 200px;
+  }
+
+  .productInfo {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productGrid {
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 0px;
+  }
+
+  .productCard {
+    width: 100%; 
+    max-width: none;
+  }
+
+  .productImage {
+    height: 150px;
+  }
+
+  .addBtn {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
+
